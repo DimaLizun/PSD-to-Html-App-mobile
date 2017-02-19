@@ -1,0 +1,146 @@
+@import "bourbon"
+@import "vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.about
+	height: auto
+	background: $white
+	text-align: center
+
+	.about-item
+		width: 340px
+		text-align: center
+		padding-top: 37px;
+		display: inline-block
+
+	 h2
+	  font-size: em(25px)
+	 	font-family: "RobotoBold",sans-serif
+
+	 p
+	  font-size: em(16px)
+	 	font-family: "RobotoLight",sans-serif
+	 	color: #959595
+
+	 i
+		 height: 100px
+		 width: 100px
+		 background: $acent-color
+		 text-align: center
+		 border-radius: 51px
+
+	.fa
+	  padding-top: 16px
+	  color: $white
+	  font-size: 67px
+
+
+
+.input
+	height: auto
+	background: #e3e3e3
+
+	.input-context
+		padding-top: 60px
+		padding-bottom: 44px
+	 h2
+	  font-size: em(25px)
+	 	font-family: "RobotoBold",sans-serif
+
+	 p
+	  width: 80%
+	  color: #959595
+	 	font-family: "RobotoLight",sans-serif
+
+	 input
+	 	width: 50%
+	 	height: 55px
+	 	margin-top: 10px;
+	 	border: none
+	 	border-radius: 18px 0 0px 18px
+	 	background: $white
+	 	font-size: em(15px)
+	 	padding-left: 10px
+    color: #7e7e7e
+	 button
+	 	width: 100px	
+	 	height: 55px
+	 	border-radius: 0 18px 18px 0
+	 	border: none
+	 	background: $acent-color
+	 	margin-left: -3px;
+	 	transition: background-color .25s ease
+
+	 	&:hover
+	 	  background: darken($acent-color, 5%)
+
+	 	&:active
+	 	  background: lighten($acent-color, 10%)
+
+	 	span
+		 	color: $white
+		 	font-family: "RobotoLight",sans-serif
+
+
+.player	
+	padding-top: 73px
+	padding-bottom: 47px
+	width: 100%
+
+
+
+.footer
+  height: auto
+  background: $white
+  text-align: center
+  ul
+  	padding-left: 0;
+  	list-style: none
+  	
+  	font-size: em(20px)
+  	li
+  	 display: inline-block
+  	 padding-left: 50px
+  	 color: lighten($black, 50%)
+  	 transition: background-color .25s ease
+  	 &:first-child
+  	 		padding-left: 0
+  	 &:hover
+  	 	color: lighten($black, 20%)
+  	 a
+  	  font-family: "RobotoBold",sans-serif
+  	 	color: inherit
+  	 	text-decoration: none
+  	
+
+
+//ALWAYS END
+@import "media"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/scss/font-awesome.scss";
+
