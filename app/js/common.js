@@ -1,5 +1,6 @@
 $(function() {
 
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -20,7 +21,7 @@ $(function() {
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 
-
+	$('.hand-head').addClass('animated bounceInRight');
 
 	var $menu = $("#my-menu").mmenu({
    //   options
@@ -45,7 +46,6 @@ $(function() {
 		}, 100);
 	});
 
-	$('.hand-head').addClass('animated bounceInRight');
 
 });
 
