@@ -1,5 +1,10 @@
 @import "bourbon"
 @import "vars.sass"
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/scss/font-awesome.scss"
+@import "app/libs/jQuery.mmenu/dist/css/jquery.mmenu.all"
+@import "app/libs/css-hamburgers/dist/hamburgers.min"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -118,38 +123,59 @@ body textarea:required:valid
 	padding-top: 57px
 	padding-bottom: 47px
 	width: 100%
-
-
+	opacity: .8
 
 .footer
-  height: auto
-  background: $white
-  text-align: center
-  ul
-  	padding-left: 0;
-  	list-style: none
-  	
-  	font-size: em(20px)
-  	li
-  	 display: inline-block
-  	 padding-left: 50px
-  	 color: lighten($black, 50%)
-  	 transition: background-color .25s ease
-  	 &:first-child
-  	 		padding-left: 0
-  	 &:hover
-  	 	color: lighten($black, 20%)
-  	 a
-  	  font-family: "RobotoBold",sans-serif
-  	 	color: inherit
-  	 	text-decoration: none
-  	
+	height: auto
+	background: $white
+	text-align: center
+	ul
+		padding-left: 0;
+		list-style: none
+		font-size: em(20px)
+	li
+		display: inline-block
+		padding-left: 50px
+		color: lighten($black, 50%)
+		transition: background-color .25s ease
+		&:first-child
+			padding-left: 0
+		
+		&:hover
+			color: lighten($black, 20%)
+	a
+		font-family: "RobotoBold",sans-serif
+		color: inherit
+		text-decoration: none
 
 
+
+.mm-menu.mm-offcanvas
+	z-index: 10 !important
+	width: 75%
+	font-family: "RobotoBold",sans-serif 
+	background: lighten($acent-color, 4%)
+	a
+		font-size: em(23px)
+		color: $white
+
+.Fixed
+	text-align: right
+	visibility: hidden
+	.my-icon
+		outline: none
+
+.hamburger
+		//padding: 27px 7px
+		&:focus
+			outline: none
+	
+		.hamburger-inner
+			background: white
+			&::before,
+			&::after
+				background: white
 //ALWAYS END
 @import "media"
 
-//Load Libs SASS
-@import "app/libs/animate/animate.sass"
-@import "app/libs/font-awesome/scss/font-awesome.scss";
 
